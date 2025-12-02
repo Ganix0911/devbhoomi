@@ -1,0 +1,19 @@
+.circular-gallery {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    /* Ensure touches are handled by JS not native scroll */
+    touch-action: none; 
+}
+
+.circular-gallery:active {
+    cursor: grabbing;
+}
+
+.circular-gallery canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
